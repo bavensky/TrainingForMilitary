@@ -36,7 +36,7 @@ void setup()
   setColor(0, 0, 0);
   pinMode(bluePin, OUTPUT); pinMode(greenPin, OUTPUT); pinMode(redPin, OUTPUT); pinMode(Buzzer, OUTPUT); 
   pinMode(4, OUTPUT); 
-  lcd.begin(16, 4);lcd.print(" KMUTNB Temp & Humi");delay(2000);  
+  lcd.begin(16, 4);lcd.print("  CMTC Temp & Humi ");delay(2000);  
   int temp = myDHT22.getTemperatureC();  //อุณหภูมิ
   int humi = myDHT22.getHumidity();      //ความชื้น
   lcd.setCursor(2, 1);lcd.print("T:");lcd.print(temp);lcd.print(" C ");
@@ -256,7 +256,7 @@ void saveblue()
 
 void displaypink()
 {
-  lcd.setCursor(0, 0);lcd.print(" KMUTNB Temp & Humi");
+  lcd.setCursor(0, 0);lcd.print("  CMTC Temp & Humi ");
   int temp = myDHT22.getTemperatureC();int humi = myDHT22.getHumidity();      
   lcd.setCursor(2, 1);lcd.print(" ");lcd.print("T:");lcd.print(" ");lcd.print(temp);lcd.print(" C ");
   lcd.setCursor(9, 1);lcd.print("H:");lcd.print(humi);lcd.print(" %RH ");
@@ -269,7 +269,7 @@ void displaypink()
 
 void displaygreen()
 {
-  lcd.setCursor(0, 0);lcd.print(" KMUTNB Temp & Humi");
+  lcd.setCursor(0, 0);lcd.print("  CMTC Temp & Humi ");
   int temp = myDHT22.getTemperatureC();int humi = myDHT22.getHumidity();      
   lcd.setCursor(2, 1);lcd.print(" ");lcd.print("T:");lcd.print(" ");lcd.print(temp);lcd.print(" C ");
   lcd.setCursor(9, 1);lcd.print("H:");lcd.print(humi);lcd.print(" %RH ");
@@ -282,7 +282,7 @@ void displaygreen()
 
 void displayorange()
 {
-  lcd.setCursor(0, 0);lcd.print(" KMUTNB Temp & Humi");
+  lcd.setCursor(0, 0);lcd.print("  CMTC Temp & Humi ");
   int temp = myDHT22.getTemperatureC();int humi = myDHT22.getHumidity();      
   lcd.setCursor(2, 1);lcd.print(" ");lcd.print("T:");lcd.print(" ");lcd.print(temp);lcd.print(" C ");
   lcd.setCursor(9, 1);lcd.print("H:");lcd.print(humi);lcd.print(" %RH ");
@@ -295,7 +295,7 @@ void displayorange()
 
 void displayred()
 {
-  lcd.setCursor(0, 0);lcd.print(" KMUTNB Temp & Humi");
+  lcd.setCursor(0, 0);lcd.print("  CMTC Temp & Humi ");
   int temp = myDHT22.getTemperatureC();int humi = myDHT22.getHumidity();      
   lcd.setCursor(2, 1);lcd.print(" ");lcd.print("T:");lcd.print(" ");lcd.print(temp);lcd.print(" C ");
   lcd.setCursor(9, 1);lcd.print("H:");lcd.print(humi);lcd.print(" %RH ");
@@ -308,7 +308,7 @@ void displayred()
 
 void displayblue()
 {
-  lcd.setCursor(0, 0);lcd.print(" KMUTNB Temp & Humi");
+  lcd.setCursor(0, 0);lcd.print("  CMTC Temp & Humi ");
   int temp = myDHT22.getTemperatureC();int humi = myDHT22.getHumidity();      
   lcd.setCursor(2, 1);lcd.print(" ");lcd.print("T:");lcd.print(" ");lcd.print(temp);lcd.print(" C ");
   lcd.setCursor(9, 1);lcd.print("H:");lcd.print(humi);lcd.print(" %RH ");
